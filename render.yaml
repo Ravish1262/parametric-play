@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: parametric-play
+    env: node
+    plan: starter
+    region: singapore # Pan-India low latency
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/settings
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/parametric_play.db
+      - key: UPLOADS_DIR
+        value: /var/data/uploads
+    disk:
+      name: parametric-data
+      mountPath: /var/data
+      sizeGB: 1

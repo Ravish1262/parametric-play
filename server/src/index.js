@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Upload storage configuration
-const uploadsDir = path.join(__dirname, '../uploads');
+const uploadsDir = process.env.UPLOADS_DIR || path.join(__dirname, '../uploads');
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
