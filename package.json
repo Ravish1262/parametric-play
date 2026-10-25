@@ -1,0 +1,22 @@
+{
+  "name": "parametric-play",
+  "version": "1.0.0",
+  "description": "Parametric Play - Professional Sports Coaching. One Platform. Three Solutions.",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev:server": "node server/src/index.js",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "test:api": "node -e \"require('http').get('http://localhost:5001/api/settings', (res) => { console.log('API Status:', res.statusCode); });\""
+  },
+  "keywords": [
+    "sports",
+    "coaching",
+    "school-sports-management",
+    "residential-societies",
+    "personal-training",
+    "parametric-play"
+  ],
+  "author": "Parametric Play",
+  "license": "ISC"
+}

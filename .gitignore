@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production builds
+dist/
+client/dist/
+
+# Android build outputs & Gradle cache
+.gradle/
+client/android/.gradle/
+client/android/app/build/
+client/android/build/
+client/android/local.properties
+*.apk
+*.aab
+
+# Logs & Environment
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
